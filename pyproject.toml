@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "test_q2u"
+version = "0.0.1"
+description = ""
+readme = "README.md"
+requires-python = ">=3.8,<3.14"
+dependencies = [
+    "fastapi==0.119.0",
+    "uvicorn[standard]==0.32.1",
+    "aiosqlite==0.20.0",
+    "pydantic==2.10.4",
+    "curl-cffi==0.7.3",
+    "tomli==2.2.1",
+    "bcrypt==4.2.1",
+    "python-multipart==0.0.20",
+    "python-dateutil==2.8.2"
+]
+authors = [
+    {name = "jsonmaki", email = ""}
+]
+keywords = []
+
+[project.urls]
+Repository = "https://github.com/jsonmaki/test_q2u"
+Releases = "https://github.com/jsonmaki/test_q2u/releases"
+
+[tool.hatch.build.targets.wheel]
+include = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
